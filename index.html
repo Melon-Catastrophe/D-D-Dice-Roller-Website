@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <title>D&D Die Roller</title>
+</head>
+<body>
+    <h2 class="header text">Roll a Die!</h2>
+    <div class="main">
+        <div class="left">
+            <section class="text header">Choose a type of die:</section>
+            <ul class='dieNum'>
+                <li onclick="chooseDie(this)">d4</li>
+                <li onclick="chooseDie(this)">d6</li>
+                <li onclick="chooseDie(this)">d8</li>
+                <li onclick="chooseDie(this)">d10</li>
+                <li onclick="chooseDie(this)">d12</li>
+                <li onclick="chooseDie(this)">d20</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div id="message-box" class="text">
+                <section class="header">Message Box</section>
+                <ul id="message-ul">
+                
+                </ul>
+            </div>
+        </div>
+        <div class="die-container" style="clear:both">
+            <img id="die" src="Images/">
+            <div id="die-text"></div>
+        </div>
+        <button id="rollButton" onclick="roll()">Roll!</button>
+        <p id="message"></p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
